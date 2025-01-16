@@ -1,1 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --blue: #2a324b;
+    --bluegrey: #58699D;
+    --grey: #E1E5EE;
+    --white: #fff;
+}
