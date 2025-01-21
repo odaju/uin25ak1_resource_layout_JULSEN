@@ -19,7 +19,7 @@ body{
 }
 
 
-/*nav {
+nav {
     background-color: var(--white);
     display: flex;
     button {
@@ -42,6 +42,6 @@ body{
                 }
         }
     }
-}*/
+}
 
 
