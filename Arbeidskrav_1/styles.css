@@ -12,7 +12,7 @@
 body{
     background-color: var(--grey);
     font-family: "Montserrat", serif;
-    font-size: 20px;
+    font-size: 12px;
     width: 100%;
     padding-top:18rem;
     display: inline-block;
@@ -22,7 +22,7 @@ li {
     list-style-type: none;
             color:(var(--black));
             margin: 0;
-            padding: 1rem;
+            padding: 0.3rem;
             display: inline-block;
 }
 
@@ -32,6 +32,15 @@ button {
     padding:1rem 2.5rem 1rem 2.5rem;
     background:var(--blue);
     color: var(--white);
+    font: inherit;
+    font-weight: bold;
+}
+
+
+/* Brukt chatgpt for å finne ut av hover funksjon på button. LINK: https://chatgpt.com/share/6790129e-1b88-800d-8aca-13997fac6be9 */
+button:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 nav{
