@@ -18,7 +18,7 @@ document.getElementById("faneid").innerHTML = faneHTML **/
 let faneHTML = ""
 
 resources.map((cat, index) => {
-    faneHTML += `<button>${cat.category}</button>`
+    faneHTML += `<li><button>${cat.category}</button></li>`
 })
 
 document.getElementById("faneid").innerHTML = faneHTML
