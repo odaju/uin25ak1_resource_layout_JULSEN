@@ -22,3 +22,7 @@ resources.map((cat, index) => {
 })
 
 document.getElementById("faneid").innerHTML = faneHTML
+
+document.getElementById("faneid").addEventListener("click", function() {
+    document.getElementById("faneid").classList.toggle("visible")
+})
