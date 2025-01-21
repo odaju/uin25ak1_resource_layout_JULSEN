@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
     --blue: #2a324b;
@@ -30,8 +30,8 @@ button {
     border: none;
     margin:0;
     padding:1rem 2.5rem 1rem 2.5rem;
-    background:var(--white);
-    color: var(--black);
+    background:var(--blue);
+    color: var(--white);
 }
 
 nav{
