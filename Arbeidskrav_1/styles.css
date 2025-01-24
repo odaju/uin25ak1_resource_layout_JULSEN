@@ -48,6 +48,11 @@ nav{
     justify-content: center;
 }
 
+#whitebox {
+    background-color: var(--white);
+    width: 100%;
+}
+
 
 /*nav {
     background-color: var(--white);

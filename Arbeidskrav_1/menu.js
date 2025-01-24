@@ -18,11 +18,29 @@ document.getElementById("faneid").innerHTML = faneHTML **/
 let faneHTML = ""
 
 resources.map((cat, index) => {
-    faneHTML += `<li><button>${cat.category}</button></li>`
+    faneHTML += `<li><button onclick="dropdown('${cat.category}')">${cat.category}</button></li>`
 })
 
 document.getElementById("faneid").innerHTML = faneHTML
 
-document.getElementById("faneid").addEventListener("click", function() {
+function dropdown(info) {
+    const filtered = resources.filter(resource => resource.category === info)
+    const selectedCategory = filtered [0]
+    const content = `
+    <article>
+        <h2 id="overskrift">${selectedCategory.category}</h2>
+        <p id="textbox">${selectedCategory.text}</p>
+        <ul>
+            ${selectedCategory.sources.map(source =>`<li><a href="${source.url}"${source.title}</li>`)}
+        </ul>
+    </article>
+    `
+
+    document.getElementById("whitebox").innerHTML = content
+}
+
+dropdown("HTML")
+
+/**document.getElementById("faneid").addEventListener("click", function() {
     document.getElementById("faneid").classList.toggle("visible")
-})
+})**/
