@@ -30,19 +30,3 @@ function dropdown(info) {
 }
 
 dropdown("HTML")
-
-
-/**<article>
-        <h2 id="overskrift">${selectedSource.sources}</h2>
-        <p id="textbox">${selectedSource.sources}</p>
-    </article>**/
-
- /**<ul>
-            ${selectedCategory.sources.map(source =>`<li><a href="${source.url}"${source.title}</li>`)}
-        </ul>**/
-
-
-
-/**document.getElementById("faneid").addEventListener("click", function() {
-    document.getElementById("faneid").classList.toggle("visible")
-})**/
