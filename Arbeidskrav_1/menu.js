@@ -1,6 +1,6 @@
 
 let faneHTML = ""
-
+/** Har fått hjelp av foreleser Tore-Marius til å finjustere .map fra linje 4 til 6.**/
 resources.map((cat, index) => {
     faneHTML += `<li><button onclick="dropdown('${cat.category}')">${cat.category}</button></li>`
 })
