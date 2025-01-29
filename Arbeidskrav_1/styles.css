@@ -21,7 +21,7 @@ body{
 /* Brukt chatgpt for å rette opp i feil i css fra linje 22 til 41. https://chatgpt.com/share/67939903-4ca8-800d-b7aa-306166cfdb63 */
 nav ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 1px;
     margin: 0;
 }
 
@@ -63,12 +63,16 @@ nav{
     justify-content: center;
 }
 
+/* Brukt chatgpt for å finjustere css https://chatgpt.com/share/679a3add-7b6c-800d-877c-705978c53404 */
 #whitebox {
     display: flex;
+    flex-direction: column; /* Gjør at innholdet stables vertikalt */
+    align-items: center; /* Sentrer innhold horisontalt */
     background-color: var(--white);
-    width: 49.7%;
-    margin: 0rem 0rem 0rem 19.5rem;
-    padding: 6rem 0rem 6rem 5rem;
+    width: 90%; /* Øker bredden for bedre tilpasning */
+    max-width: 671px; /* Begrens maksbredden */
+    margin: 0rem auto; /* Sentrumjusterer og gir bedre mellomrom */
+    padding: 3rem 3rem 3rem 2.4rem; /* Justerer padding for bedre mobilvennlighet */
 }
 
 main section h2 {
